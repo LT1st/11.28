@@ -1,4 +1,4 @@
-# Install script for directory: /home/burn-e/Code/11.27
+# Install script for directory: /home/steven/code/tst/11.28
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/burn-e/Code/11.27/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/steven/code/tst/11.28/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

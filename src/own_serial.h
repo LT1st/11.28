@@ -51,7 +51,7 @@ public:
 };
 
 
-
+void test_float_to_4hex(float num);
 
 // int main(int argc, char *argv[])
 // {    int i;

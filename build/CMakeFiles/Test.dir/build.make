@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/burn-e/Code/11.27
+CMAKE_SOURCE_DIR = /home/steven/code/tst/11.28
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/burn-e/Code/11.27/build
+CMAKE_BINARY_DIR = /home/steven/code/tst/11.28/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Test.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Test.dir/flags.make
 
 CMakeFiles/Test.dir/src/detect.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/detect.cpp.o: ../src/detect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/src/detect.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/detect.cpp.o -c /home/burn-e/Code/11.27/src/detect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/src/detect.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/detect.cpp.o -c /home/steven/code/tst/11.28/src/detect.cpp
 
 CMakeFiles/Test.dir/src/detect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/detect.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/detect.cpp > CMakeFiles/Test.dir/src/detect.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/detect.cpp > CMakeFiles/Test.dir/src/detect.cpp.i
 
 CMakeFiles/Test.dir/src/detect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/detect.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/detect.cpp -o CMakeFiles/Test.dir/src/detect.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/detect.cpp -o CMakeFiles/Test.dir/src/detect.cpp.s
 
 CMakeFiles/Test.dir/src/detect.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Test.dir/src/detect.cpp.o.provides.build: CMakeFiles/Test.dir/src/det
 
 CMakeFiles/Test.dir/src/deviation_angle.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/deviation_angle.cpp.o: ../src/deviation_angle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/src/deviation_angle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/deviation_angle.cpp.o -c /home/burn-e/Code/11.27/src/deviation_angle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Test.dir/src/deviation_angle.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/deviation_angle.cpp.o -c /home/steven/code/tst/11.28/src/deviation_angle.cpp
 
 CMakeFiles/Test.dir/src/deviation_angle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/deviation_angle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/deviation_angle.cpp > CMakeFiles/Test.dir/src/deviation_angle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/deviation_angle.cpp > CMakeFiles/Test.dir/src/deviation_angle.cpp.i
 
 CMakeFiles/Test.dir/src/deviation_angle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/deviation_angle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/deviation_angle.cpp -o CMakeFiles/Test.dir/src/deviation_angle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/deviation_angle.cpp -o CMakeFiles/Test.dir/src/deviation_angle.cpp.s
 
 CMakeFiles/Test.dir/src/deviation_angle.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Test.dir/src/deviation_angle.cpp.o.provides.build: CMakeFiles/Test.di
 
 CMakeFiles/Test.dir/src/find_bucket.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/find_bucket.cpp.o: ../src/find_bucket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/src/find_bucket.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/find_bucket.cpp.o -c /home/burn-e/Code/11.27/src/find_bucket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Test.dir/src/find_bucket.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/find_bucket.cpp.o -c /home/steven/code/tst/11.28/src/find_bucket.cpp
 
 CMakeFiles/Test.dir/src/find_bucket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/find_bucket.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/find_bucket.cpp > CMakeFiles/Test.dir/src/find_bucket.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/find_bucket.cpp > CMakeFiles/Test.dir/src/find_bucket.cpp.i
 
 CMakeFiles/Test.dir/src/find_bucket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/find_bucket.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/find_bucket.cpp -o CMakeFiles/Test.dir/src/find_bucket.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/find_bucket.cpp -o CMakeFiles/Test.dir/src/find_bucket.cpp.s
 
 CMakeFiles/Test.dir/src/find_bucket.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Test.dir/src/find_bucket.cpp.o.provides.build: CMakeFiles/Test.dir/sr
 
 CMakeFiles/Test.dir/src/find_cicles.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/find_cicles.cpp.o: ../src/find_cicles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Test.dir/src/find_cicles.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/find_cicles.cpp.o -c /home/burn-e/Code/11.27/src/find_cicles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Test.dir/src/find_cicles.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/find_cicles.cpp.o -c /home/steven/code/tst/11.28/src/find_cicles.cpp
 
 CMakeFiles/Test.dir/src/find_cicles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/find_cicles.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/find_cicles.cpp > CMakeFiles/Test.dir/src/find_cicles.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/find_cicles.cpp > CMakeFiles/Test.dir/src/find_cicles.cpp.i
 
 CMakeFiles/Test.dir/src/find_cicles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/find_cicles.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/find_cicles.cpp -o CMakeFiles/Test.dir/src/find_cicles.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/find_cicles.cpp -o CMakeFiles/Test.dir/src/find_cicles.cpp.s
 
 CMakeFiles/Test.dir/src/find_cicles.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Test.dir/src/find_cicles.cpp.o.provides.build: CMakeFiles/Test.dir/sr
 
 CMakeFiles/Test.dir/src/getdepth_green.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/getdepth_green.cpp.o: ../src/getdepth_green.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Test.dir/src/getdepth_green.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/getdepth_green.cpp.o -c /home/burn-e/Code/11.27/src/getdepth_green.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Test.dir/src/getdepth_green.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/getdepth_green.cpp.o -c /home/steven/code/tst/11.28/src/getdepth_green.cpp
 
 CMakeFiles/Test.dir/src/getdepth_green.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/getdepth_green.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/getdepth_green.cpp > CMakeFiles/Test.dir/src/getdepth_green.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/getdepth_green.cpp > CMakeFiles/Test.dir/src/getdepth_green.cpp.i
 
 CMakeFiles/Test.dir/src/getdepth_green.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/getdepth_green.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/getdepth_green.cpp -o CMakeFiles/Test.dir/src/getdepth_green.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/getdepth_green.cpp -o CMakeFiles/Test.dir/src/getdepth_green.cpp.s
 
 CMakeFiles/Test.dir/src/getdepth_green.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Test.dir/src/getdepth_green.cpp.o.provides.build: CMakeFiles/Test.dir
 
 CMakeFiles/Test.dir/src/hough_round.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/hough_round.cpp.o: ../src/hough_round.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Test.dir/src/hough_round.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/hough_round.cpp.o -c /home/burn-e/Code/11.27/src/hough_round.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Test.dir/src/hough_round.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/hough_round.cpp.o -c /home/steven/code/tst/11.28/src/hough_round.cpp
 
 CMakeFiles/Test.dir/src/hough_round.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/hough_round.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/hough_round.cpp > CMakeFiles/Test.dir/src/hough_round.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/hough_round.cpp > CMakeFiles/Test.dir/src/hough_round.cpp.i
 
 CMakeFiles/Test.dir/src/hough_round.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/hough_round.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/hough_round.cpp -o CMakeFiles/Test.dir/src/hough_round.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/hough_round.cpp -o CMakeFiles/Test.dir/src/hough_round.cpp.s
 
 CMakeFiles/Test.dir/src/hough_round.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Test.dir/src/hough_round.cpp.o.provides.build: CMakeFiles/Test.dir/sr
 
 CMakeFiles/Test.dir/src/main.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Test.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/main.cpp.o -c /home/burn-e/Code/11.27/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Test.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/main.cpp.o -c /home/steven/code/tst/11.28/src/main.cpp
 
 CMakeFiles/Test.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/main.cpp > CMakeFiles/Test.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/main.cpp > CMakeFiles/Test.dir/src/main.cpp.i
 
 CMakeFiles/Test.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/main.cpp -o CMakeFiles/Test.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/main.cpp -o CMakeFiles/Test.dir/src/main.cpp.s
 
 CMakeFiles/Test.dir/src/main.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Test.dir/src/main.cpp.o.provides.build: CMakeFiles/Test.dir/src/main.
 
 CMakeFiles/Test.dir/src/own_serial.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/own_serial.cpp.o: ../src/own_serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Test.dir/src/own_serial.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/own_serial.cpp.o -c /home/burn-e/Code/11.27/src/own_serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Test.dir/src/own_serial.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/own_serial.cpp.o -c /home/steven/code/tst/11.28/src/own_serial.cpp
 
 CMakeFiles/Test.dir/src/own_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/own_serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/own_serial.cpp > CMakeFiles/Test.dir/src/own_serial.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/own_serial.cpp > CMakeFiles/Test.dir/src/own_serial.cpp.i
 
 CMakeFiles/Test.dir/src/own_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/own_serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/own_serial.cpp -o CMakeFiles/Test.dir/src/own_serial.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/own_serial.cpp -o CMakeFiles/Test.dir/src/own_serial.cpp.s
 
 CMakeFiles/Test.dir/src/own_serial.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Test.dir/src/own_serial.cpp.o.provides.build: CMakeFiles/Test.dir/src
 
 CMakeFiles/Test.dir/src/segcolors.cpp.o: CMakeFiles/Test.dir/flags.make
 CMakeFiles/Test.dir/src/segcolors.cpp.o: ../src/segcolors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Test.dir/src/segcolors.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/segcolors.cpp.o -c /home/burn-e/Code/11.27/src/segcolors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Test.dir/src/segcolors.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/src/segcolors.cpp.o -c /home/steven/code/tst/11.28/src/segcolors.cpp
 
 CMakeFiles/Test.dir/src/segcolors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/src/segcolors.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/burn-e/Code/11.27/src/segcolors.cpp > CMakeFiles/Test.dir/src/segcolors.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steven/code/tst/11.28/src/segcolors.cpp > CMakeFiles/Test.dir/src/segcolors.cpp.i
 
 CMakeFiles/Test.dir/src/segcolors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/src/segcolors.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/burn-e/Code/11.27/src/segcolors.cpp -o CMakeFiles/Test.dir/src/segcolors.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steven/code/tst/11.28/src/segcolors.cpp -o CMakeFiles/Test.dir/src/segcolors.cpp.s
 
 CMakeFiles/Test.dir/src/segcolors.cpp.o.requires:
 
@@ -299,7 +299,6 @@ Test_EXTERNAL_OBJECTS =
 ../bin/Test: CMakeFiles/Test.dir/src/segcolors.cpp.o
 ../bin/Test: CMakeFiles/Test.dir/build.make
 ../bin/Test: /usr/local/lib/libopencv_dnn.so.4.2.0
-../bin/Test: /usr/local/lib/libopencv_gapi.so.4.2.0
 ../bin/Test: /usr/local/lib/libopencv_highgui.so.4.2.0
 ../bin/Test: /usr/local/lib/libopencv_ml.so.4.2.0
 ../bin/Test: /usr/local/lib/libopencv_objdetect.so.4.2.0
@@ -336,7 +335,7 @@ Test_EXTERNAL_OBJECTS =
 ../bin/Test: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL-6.3.so.6.3.0
 ../bin/Test: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL-6.3.so.6.3.0
 ../bin/Test: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-../bin/Test: /usr/lib/x86_64-linux-gnu/librealsense2.so.2.39.0
+../bin/Test: /usr/local/lib/librealsense2.so.2.35.33
 ../bin/Test: /usr/local/lib/libopencv_imgcodecs.so.4.2.0
 ../bin/Test: /usr/local/lib/libopencv_calib3d.so.4.2.0
 ../bin/Test: /usr/local/lib/libopencv_features2d.so.4.2.0
@@ -403,7 +402,7 @@ Test_EXTERNAL_OBJECTS =
 ../bin/Test: /usr/lib/x86_64-linux-gnu/libXext.so
 ../bin/Test: /usr/lib/x86_64-linux-gnu/libXt.so
 ../bin/Test: CMakeFiles/Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/burn-e/Code/11.27/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../bin/Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/steven/code/tst/11.28/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../bin/Test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -428,6 +427,6 @@ CMakeFiles/Test.dir/clean:
 .PHONY : CMakeFiles/Test.dir/clean
 
 CMakeFiles/Test.dir/depend:
-	cd /home/burn-e/Code/11.27/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/burn-e/Code/11.27 /home/burn-e/Code/11.27 /home/burn-e/Code/11.27/build /home/burn-e/Code/11.27/build /home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/steven/code/tst/11.28/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/steven/code/tst/11.28 /home/steven/code/tst/11.28 /home/steven/code/tst/11.28/build /home/steven/code/tst/11.28/build /home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Test.dir/depend
 

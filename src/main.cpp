@@ -33,7 +33,7 @@ using namespace std; */
 #define BLUE  4
 #define GREEN 5
 
-#define DEBUG
+//#define DEBUG
 #define DEBUG_DEEP
 #define DEBUG_MANY
 #define IFSERIAL
@@ -698,18 +698,18 @@ int main()
             cout << "可以发送:" << g_readColor << endl; 
             g_call_color_now_1st = g_readColor;
 
-            #ifdef IFSERIAL 
-                #ifdef DEBUG   
+//            #ifdef IFSERIAL 
+/*                 #ifdef DEBUG   
                     g_distance_1 = 11.11;
                     g_angle_x = 22.22;
                     g_call_color_now_1st = 3;
 
-                #endif
-             cout<<"ditance="<<g_distance_1<<"   amgle="<<g_angle_x
+                #endif */
+/*              cout<<"ditance="<<g_distance_1<<"   amgle="<<g_angle_x
                 <<"   Angle="<<g_distance_1<<"  status="<<g_call_color_now_1st<<endl;
                 ownSerial.writeData(g_distance_1,g_angle_x,
                                     g_distance_1,g_call_color_now_1st);
-            #endif
+            #endif */
 
             cout << "**************************************************************************************************************" << endl;
         }
@@ -721,22 +721,20 @@ int main()
 
 
         #ifdef IFSERIAL 
-            #ifdef DEBUG   
+           /*  #ifdef DEBUG   
                 g_distance_1 = 11.11;
                 g_angle_x = 22.22;
                 g_call_color_now_1st = 3;
 
-            #endif
+            #endif */
             //  cout<<"ditance="<<g_distance_1<<"   amgle="<<g_angle_x
             //     <<"   Angle="<<g_distance_1<<"  status="<<g_call_color_now_1st<<endl;
                 ownSerial.writeData(g_distance_1,g_angle_x,
                                     g_distance_1,g_call_color_now_1st);
         #endif
-
         //显示
         imshow(depth_win,depth_image_4_show);
         imshow(color_win,color_image);
-
         // namedWindow("result");imshow("result",result);
         // cout << endl;
         // cout << "FPS: " <<(((double)getTickCount())/getTickFrequency() - time_main)) <<"\t"<< (double)getTickCount()/getTickFrequency() - time_main << "*******************\n\n" << endl;

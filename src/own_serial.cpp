@@ -5,7 +5,7 @@ uint8_t rbuff[20];
 own_serial::own_serial(const char *port,
           uint32_t baudrat)
 {
-    //std::cout<<"1\n";
+    std::cout<<"1\n";
     this_port = port;
     this_baudrate = baudrat;
 }
@@ -22,7 +22,7 @@ int own_serial::init(int &fd1)
     {
         fd1 = open(this_port, O_RDWR| O_NOCTTY| O_NDELAY);
         perror("open_port: Unable to open serial\n");   
-        //std::cout<<"fd1="<<fd1<<std::endl;
+        std::cout<<"fd1="<<fd1<<std::endl;
     //return 0;
     }
     // saio.sa_handler = signal_handler_IO;
@@ -50,7 +50,7 @@ int own_serial::init(int &fd1)
     tcflush(fd1,TCIOFLUSH);
     tcsetattr(fd1,TCSANOW,&termAttr);
     fd = fd1;
-    //std::cout<<"serial configured....\n";
+    std::cout<<"serial configured....\n";
 }
 
 int own_serial::isopen(void)
@@ -59,6 +59,9 @@ int own_serial::isopen(void)
 }
 int own_serial::writeData(float distanceLeft,float distanceRight,float angel,int status)
 {
+    unsigned char tbuf[4];
+	unsigned char *p = (unsigned char*)&distanceLeft + 3;//指针p先指向float的最高字节
+	float res;//验证float拆分为4个字节后，重组为float的结果
     uint8_t buffData[17];
     dataUnion leftDisUnion;
     dataUnion rightDisUnion;
@@ -69,29 +72,44 @@ int own_serial::writeData(float distanceLeft,float distanceRight,float angel,int
 
     buffData[0] = 'A';
     buffData[1] = 'T';
-    // switch (status)
-    // {
-    // case 0:
-    //     buffData[2] = '0';
-    //     break;
-    // case 1:
-    //     buffData[2] = '1';
-    //     break;
-    // case 2:
-    //     buffData[2] = '2';
-    //     break;
-    // case 3:
-    //     buffData[2] = '3';
-    //     break;
-    // case 4:
-    //     buffData[2] = '4';
-    //     break;
-    // default:
-    //     break;
-    // }
-    buffData[2] = status;
+     switch (status)
+     {
+     case 0:
+         buffData[2] = '0';
+         break;
+     case 1:
+         buffData[2] = '1';
+         break;
+     case 2:
+         buffData[2] = '2';
+         break;
+     case 3:
+         buffData[2] = '3';
+         break;
+     case 4:
+         buffData[2] = '4';
+         break;
+     case 5:
+         buffData[2] = '5';
+         break;
+     default:
+         break;
+     }
+    /* uint8_t statusChar = '0';
+    buffData[2] = statusChar; */
 
-    CopyData(&leftDisUnion.dataChar[0],&buffData[3],4);
+    buffData[3] = *(p-3);
+	buffData[4] = *(p-2);
+	buffData[5] = *(p-1);
+	buffData[6] = *p;
+
+    for(int i=3;i<7;i++)
+        printf("%x\t%d\t", buffData[i], (int)buffData[i]);
+        //std::cout << "\t" << (char)buffData[i] <<"\t";
+
+    test_float_to_4hex(angel);
+
+    //CopyData(&leftDisUnion.dataChar[0],&buffData[3],4);
     CopyData(&rightDisUnion.dataChar[0],&buffData[7],4);
     CopyData(&angleUnion.dataChar[0],&buffData[11],4);
 
@@ -101,8 +119,9 @@ int own_serial::writeData(float distanceLeft,float distanceRight,float angel,int
     int ifWrite =0;
     for (size_t i = 0; i < 17; i++)
     {
-        //std::cout  <<  (int)buffData[i]  <<  std::endl;
+        std::cout  <<  (int)buffData[i]  <<  std::endl;
         ifWrite = write(fd,&buffData[i],1);
+        printf("%c", buffData[i] );
     }
     
 }
@@ -121,7 +140,7 @@ int own_serial::sendGesture(int Index)
     {
         ifWrite = write(fd,&buffData[i],1);
     }
-    //std::cout<<"我找到你的手====>"<<Index<<std::endl;
+    std::cout<<"我找到你的手====>"<<Index<<std::endl;
 }
 static int cnt =0;
 void signal_handler_IO(int status)
@@ -130,10 +149,10 @@ void signal_handler_IO(int status)
     cnt++;
     //static int fd =status;
     int nread = read(fd, &rbuff, 4);
-    //std::cout <<" nread "<<nread<<std::endl;
+    std::cout <<" nread "<<nread<<std::endl;
     if (nread>0)
     {
-        //std::cout<<rbuff<<" "<<cnt<<std::endl;
+        std::cout<<rbuff<<" "<<cnt<<std::endl;
     }
 }
 
@@ -147,3 +166,31 @@ void CopyData(uint8_t* origen, uint8_t* afterTreat, int size)
 	}
 }
 
+void test_float_to_4hex(float num)
+{
+	unsigned char tbuf[4];
+    //指针p先指向float的最高字节
+	unsigned char *p = (unsigned char*)&num + 3;
+	float res;//验证float拆分为4个字节后，重组为float的结果
+
+	//传入的float的值
+	printf("\r\n传入的float的值：%f", num);
+
+	//获取对应的4个字节，从低位到高位，这时就可以用于hex格式的数据传输了
+	tbuf[0] = *(p-3);
+	tbuf[1] = *(p-2);
+	tbuf[2] = *(p-1);
+	tbuf[3] = *p;
+
+	//printf("\r\n查看float的每个字节内容(16进制):\r\n");
+	printf("\t%x,%x,%x,%x\r\n", tbuf[0], tbuf[1], tbuf[2], tbuf[3]);
+
+	//对拆分后的4个字节进行重组，模拟接收到hex后的数据还原过程
+	unsigned char *pp = (unsigned char*)&res;
+	pp[0] = tbuf[0];
+	pp[1] = tbuf[1];  
+	pp[2] = tbuf[2];
+	pp[3] = tbuf[3];
+
+	//printf("\r\n重组后的float的值：%f\r\n", res);
+}

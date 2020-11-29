@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/burn-e/Code/11.27/src/detect.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/detect.cpp.o"
-  "/home/burn-e/Code/11.27/src/deviation_angle.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/deviation_angle.cpp.o"
-  "/home/burn-e/Code/11.27/src/find_bucket.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/find_bucket.cpp.o"
-  "/home/burn-e/Code/11.27/src/find_cicles.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/find_cicles.cpp.o"
-  "/home/burn-e/Code/11.27/src/getdepth_green.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/getdepth_green.cpp.o"
-  "/home/burn-e/Code/11.27/src/hough_round.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/hough_round.cpp.o"
-  "/home/burn-e/Code/11.27/src/main.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/main.cpp.o"
-  "/home/burn-e/Code/11.27/src/own_serial.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/own_serial.cpp.o"
-  "/home/burn-e/Code/11.27/src/segcolors.cpp" "/home/burn-e/Code/11.27/build/CMakeFiles/Test.dir/src/segcolors.cpp.o"
+  "/home/steven/code/tst/11.28/src/detect.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/detect.cpp.o"
+  "/home/steven/code/tst/11.28/src/deviation_angle.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/deviation_angle.cpp.o"
+  "/home/steven/code/tst/11.28/src/find_bucket.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/find_bucket.cpp.o"
+  "/home/steven/code/tst/11.28/src/find_cicles.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/find_cicles.cpp.o"
+  "/home/steven/code/tst/11.28/src/getdepth_green.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/getdepth_green.cpp.o"
+  "/home/steven/code/tst/11.28/src/hough_round.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/hough_round.cpp.o"
+  "/home/steven/code/tst/11.28/src/main.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/main.cpp.o"
+  "/home/steven/code/tst/11.28/src/own_serial.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/own_serial.cpp.o"
+  "/home/steven/code/tst/11.28/src/segcolors.cpp" "/home/steven/code/tst/11.28/build/CMakeFiles/Test.dir/src/segcolors.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -34,6 +34,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/x86_64-linux-gnu"
   "/usr/local/include/pcl-1.11"
   "/usr/include/eigen3"
+  "/usr/local/include"
   )
 
 # Targets to which this target links.
